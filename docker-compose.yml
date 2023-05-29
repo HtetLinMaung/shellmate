@@ -6,7 +6,7 @@ services:
     restart: always
     build: .
     ports:
-      - "7070:3000"
+      - "4040:3000"
     environment:
       - API_KEY=636c0a5e8613fe1613c5696e084040b3
       - JWT_SECRET=3682f43654547c75e13baaf06b37c6f2213d527e030c7cbbc1f0affa8ba97dbe
