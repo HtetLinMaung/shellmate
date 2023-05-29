@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  shellmate:
+    image: htetlinmaung/shellmate
+    # build: .
+    ports:
+      - "7070:3000"
+    environment:
+      - API_KEY=secret
+      - express_handler_mode=native
+    volumes:
+      - /temp:./temp
+      - /var/run/docker.sock:/var/run/docker.sock
+    
