@@ -3,6 +3,7 @@ version: '3.9'
 services:
   shellmate:
     image: htetlinmaung/shellmate
+    restart: always
     # build: .
     ports:
       - "7070:3000"
