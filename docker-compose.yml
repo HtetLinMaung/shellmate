@@ -14,4 +14,5 @@ services:
     volumes:
       - ./temp:/app/temp
       - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/local/bin/docker-compose:/usr/local/bin/docker-compose
     
